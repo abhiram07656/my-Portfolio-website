@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhiram Muduli | AI Engineer & CSE (AI) Student</title>
+  <meta name="description"
+    content="Portfolio of Abhiram Muduli - B.Tech CSE (AI) student at Gandhi Institute of Excellent Technocrats. AI enthusiast, Machine Learning developer, and tech innovator.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Glowing Custom Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-container">
+    <nav class="navbar">
+      <a href="#home" class="logo">
+        <span class="logo-icon"><i class="fa-solid fa-brain"></i></span>
+        <span class="logo-text">Abhiram<span class="highlight">.AI</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#skills" class="nav-link"><i class="fa-solid fa-chart-simple"></i> Skills</a></li>
+        <li><a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+        <li><a href="#achievements" class="nav-link"><i class="fa-solid fa-trophy"></i> Achievements</a></li>
+        <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-glow"><i class="fa-solid fa-paper-plane"></i> Let's Connect</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SECTION 1: HOME & ABOUT ME -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content" data-aos="fade-right">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span> B-Tech CSE (AI) Student
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I'm <br>
+            <span class="gradient-text glow-text">Abhiram Muduli</span>
+          </h1>
+
+          <div class="typing-container">
+            <span class="typing-prefix">Passionate about </span>
+            <span class="typing-text" id="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Currently pursuing B.Tech in <strong>Computer Science & Engineering (Artificial Intelligence)</strong> at
+            <span class="highlight-text">Gandhi Institute of Excellent Technocrats</span>.
+            I build intelligent machine learning models, autonomous computer vision systems, and modern web applications
+            that bridge AI research with real-world impact.
+          </p>
+
+          <!-- Quick Info Cards -->
+          <div class="info-chips">
+            <div class="chip"><i class="fa-solid fa-graduation-cap"></i> CSE (AI) Major</div>
+            <div class="chip"><i class="fa-solid fa-building-columns"></i> GIET Campus</div>
+            <div class="chip"><i class="fa-solid fa-location-dot"></i> Odisha, India</div>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary btn-ripple">
+              <i class="fa-solid fa-rocket"></i> Explore Projects
+            </a>
+            <a href="#skills" class="btn btn-secondary">
+              <i class="fa-solid fa-chart-line"></i> View Skill Plots
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-solid fa-address-card"></i> Contact Info
+            </a>
+          </div>
+
+          <!-- Highlight Counters -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">AI Projects Built</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="92">0</span><span class="stat-plus">%</span>
+              <span class="stat-label">Model Accuracy</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Photo with Futuristic AI Frame -->
+        <div class="hero-visual" data-aos="fade-left">
+          <div class="avatar-card tilt-element">
+            <div class="avatar-frame-glow"></div>
+            <div class="avatar-box">
+              <img src="images/hero_profile.jpg" alt="Abhiram Muduli Photo" class="avatar-img" id="hero-img">
+              <div class="avatar-overlay">
+                <span class="status-indicator"><i class="fa-solid fa-circle-check"></i> Available for AI Internships &
+                  Collabs</span>
+              </div>
+            </div>
+
+            <!-- Floating Micro Cards -->
+            <div class="floating-badge badge-top-right floating-anim-1">
+              <i class="fa-solid fa-robot"></i>
+              <div>
+                <strong>AI & Deep Learning</strong>
+                <span>Specialist</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left floating-anim-2">
+              <i class="fa-solid fa-code"></i>
+              <div>
+                <strong>Python & PyTorch</strong>
+                <span>Advanced</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SKILLS (NAME + ANIMATED BAR PLOTS) -->
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fa-solid fa-chart-column"></i> Technical Proficiency</div>
+          <h2 class="section-title">My <span class="gradient-text">Skills Bar Plot</span></h2>
+          <p class="section-subtitle">A visual representation of my technical mastery, core competencies, and continuous
+            learning curve in Computer Science & AI.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="ai">AI & Machine Learning</button>
+          <button class="filter-btn" data-filter="dev">Programming & Web</button>
+          <button class="filter-btn" data-filter="tools">Frameworks & Tools</button>
+        </div>
+
+        <!-- Skill Bar Plot Grid -->
+        <div class="skills-grid" id="skills-container">
+
+          <!-- Skill Item 1 -->
+          <div class="skill-card" data-category="dev">
+            <div class="skill-header">
+              <div class="skill-info">
+                <i class="fa-brands fa-python skill-icon python-icon"></i>
+                <span class="skill-name">Python & Core Data Science</span>
+              </div>
+              <span class="skill-percentage">92%</span>
+            </div>
+            <div class="bar-plot-track">
+              <div class="bar-plot-fill" data-progress="92%" style="--target-width: 92%;">
+                <span class="bar-glow"></span>
+              </div>
+            </div>
+            <div class="skill-footer">
+              <span>NumPy, Pandas, Matplotlib, Scikit-learn</span>
+              <span class="level-badge level-expert">Advanced</span>
+            </div>
+          </div>
+
+          <!-- Skill Item 2 -->
+          <div class="skill-card" data-category="ai">
+            <div class="skill-header">
+              <div class="skill-info">
+                <i class="fa-solid fa-brain skill-icon ai-icon"></i>
+                <span class="skill-name">Machine Learning & Neural Networks</span>
+              </div>
+              <span class="skill-percentage">88%</span>
+            </div>
+            <div class="bar-plot-track">
+              <div class="bar-plot-fill" data-progress="88%" style="--target-width: 88%;">
+                <span class="bar-glow"></span>
+              </div>
+            </div>
+            <div class="skill-footer">
+              <span>Supervised, Unsupervised, CNNs, RNNs</span>
+              <span class="level-badge level-expert">Advanced</span>
+            </div>
+          </div>
+
+          <!-- Skill Item 3 -->
+          <div class="skill-card" data-category="ai">
+            <div class="skill-header">
+              <div class="skill-info">
+                <i class="fa-solid fa-microchip skill-icon torch-icon"></i>
+                <span class="skill-name">PyTorch & TensorFlow / Keras</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="bar-plot-track">
+              <div class="bar-plot-fill" data-progress="85%" style="--target-width: 85%;">
+                <span class="bar-glow"></span>
+              </div>
+            </div>
+            <div class="skill-footer">
+              <span>Model Architecture & Transfer Learning</span>
+              <span class="level-badge level-intermediate">Proficient</span>
+            </div>
+          </div>
+
+          <!-- Skill Item 4 -->
+          <div class="skill-card" data-category="ai">
+            <div class="skill-header">
+              <div class="skill-info">
+                <i class="fa-solid fa-eye skill-icon cv-icon"></i>
+                <span class="skill-name">Computer Vision (OpenCV & YOLO)</span>
+              </div>
+              <span class="skill-percentage">82%</span>
+            </div>
+            <div class="bar-plot-track">
+              <div class="bar-plot-fill" data-progress="82%" style="--target-width: 82%;">
+                <span class="bar-glow"></span>
+              </div>
+            </div>
+            <div class="skill-footer">
+              <span>Object Detection, Image Processing, Segmentation</span>
+              <span class="level-badge level-intermediate">Proficient</span>
+            </div>
+          </div>
+
+          <!-- Skill Item 5 -->
+          <div class="skill-card" data-category="ai">
+            <div class="skill-header">
+              <div class="skill-info">
+                <i class="fa-solid fa-comments skill-icon nlp-icon"></i>
+                <span class="skill-name">Natural Language Processing (NLP)</span>
+              </div>
+              <span class="skill-percentage">78%</span>
+            </div>
+            <div class="bar-plot-track">
+              <div class="bar-plot-fill" data-progress="78%" style="--target-width: 78%;">
+                <span class="bar-glow"></span>
+              </div>
+            </div>
+            <div class="skill-footer">
+              <span>NLTK, SpaCy, HuggingFace Transformers</span>
+              <span class="level-badge level-intermediate">Proficient</span>
+            </div>
+          </div>
+
+          <!-- Skill Item 6 -->
+          <div class="skill-card" data-category="dev">
+            <div class="skill-header">
+              <div class="skill-info">
+                <i class="fa-solid fa-code skill-icon dsa-icon"></i>
+                <span class="skill-name">Data Structures & Algorithms</span>
+              </div>
+              <span class="skill-percentage">86%</span>
+            </div>
+            <div class="bar-plot-track">
+              <div class="bar-plot-fill" data-progress="86%" style="--target-width: 86%;">
+                <span class="bar-glow"></span>
+              </div>
+            </div>
+            <div class="skill-footer">
+              <span>C++, Python, Problem Solving, Complexity Analysis</span>
+              <span class="level-badge level-expert">Advanced</span>
+            </div>
+          </div>
+
+          <!-- Skill Item 7 -->
+          <div class="skill-card" data-category="dev">
+            <div class="skill-header">
+              <div class="skill-info">
+                <i class="fa-brands fa-html5 skill-icon web-icon"></i>
+                <span class="skill-name">Web Development (HTML, CSS, JS)</span>
+              </div>
+              <span class="skill-percentage">88%</span>
+            </div>
+            <div class="bar-plot-track">
+              <div class="bar-plot-fill" data-progress="88%" style="--target-width: 88%;">
+                <span class="bar-glow"></span>
+              </div>
+            </div>
+            <div class="skill-footer">
+              <span>Modern Frontend, Responsive UI, Animations</span>
+              <span class="level-badge level-expert">Advanced</span>
+            </div>
+          </div>
+
+          <!-- Skill Item 8 -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-info">
+                <i class="fa-solid fa-database skill-icon db-icon"></i>
+                <span class="skill-name">SQL & Database Systems</span>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="bar-plot-track">
+              <div class="bar-plot-fill" data-progress="80%" style="--target-width: 80%;">
+                <span class="bar-glow"></span>
+              </div>
+            </div>
+            <div class="skill-footer">
+              <span>MySQL, PostgreSQL, MongoDB Basics</span>
+              <span class="level-badge level-intermediate">Proficient</span>
+            </div>
+          </div>
+
+          <!-- Skill Item 9 -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-header">
+              <div class="skill-info">
+                <i class="fa-brands fa-git-alt skill-icon git-icon"></i>
+                <span class="skill-name">Git, GitHub & Linux Dev Environment</span>
+              </div>
+              <span class="skill-percentage">84%</span>
+            </div>
+            <div class="bar-plot-track">
+              <div class="bar-plot-fill" data-progress="84%" style="--target-width: 84%;">
+                <span class="bar-glow"></span>
+              </div>
+            </div>
+            <div class="skill-footer">
+              <span>Version Control, CI/CD Workflows, Bash</span>
+              <span class="level-badge level-intermediate">Proficient</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PROJECTS (CLICK BOX OPENS URL) -->
+    <section id="projects" class="section-padding bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fa-solid fa-laptop-code"></i> Innovation Portfolio</div>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Click any project card to open its live demonstration or GitHub repository link.
+          </p>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+          <!-- Project Box 1 -->
+          <div class="project-card tilt-element" data-url="https://github.com/abhiram-muduli/neural-vision-ai"
+            title="Click to open project link">
+            <div class="project-image-box">
+              <img src="images/project_ai_vision.jpg" alt="Neural Vision AI" class="project-img">
+              <div class="project-badge">Computer Vision</div>
+              <div class="project-hover-overlay">
+                <span class="hover-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Link</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Neural Vision AI - Object Detection</h3>
+              <p class="project-desc">Real-time multi-class object detection and tracking engine built with YOLOv8,
+                OpenCV, and PyTorch with 94.2% mAP accuracy.</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>YOLOv8</span>
+                <span>PyTorch</span>
+                <span>OpenCV</span>
+              </div>
+              <div class="project-card-footer">
+                <span class="project-link-text"><i class="fa-brands fa-github"></i>
+                  github.com/abhiram-muduli/neural-vision-ai</span>
+                <span class="click-hint"><i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Box 2 -->
+          <div class="project-card tilt-element" data-url="https://github.com/abhiram-muduli/autonomous-agent-hub"
+            title="Click to open project link">
+            <div class="project-image-box">
+              <img src="images/project_ai_agent.jpg" alt="Autonomous AI Agent Hub" class="project-img">
+              <div class="project-badge">GenAI & LLM</div>
+              <div class="project-hover-overlay">
+                <span class="hover-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Link</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Autonomous AI Agent Orchestrator</h3>
+              <p class="project-desc">Multi-agent system designed for automated research synthesis, task execution, and
+                autonomous decision pipeline orchestration.</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>LangChain</span>
+                <span>Gemini API</span>
+                <span>FastAPI</span>
+              </div>
+              <div class="project-card-footer">
+                <span class="project-link-text"><i class="fa-brands fa-github"></i>
+                  github.com/abhiram-muduli/autonomous-agent-hub</span>
+                <span class="click-hint"><i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Box 3 -->
+          <div class="project-card tilt-element" data-url="https://github.com/abhiram-muduli/health-ai-diagnostics"
+            title="Click to open project link">
+            <div class="project-image-box">
+              <img src="images/project_health_ai.jpg" alt="Smart Health AI Diagnostic Platform" class="project-img">
+              <div class="project-badge">Healthcare AI</div>
+              <div class="project-hover-overlay">
+                <span class="hover-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Link</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Smart Health Diagnostic Assistant</h3>
+              <p class="project-desc">Deep learning model for medical image disease prediction and physiological signal
+                classification with real-time UI dashboard.</p>
+              <div class="project-tags">
+                <span>TensorFlow</span>
+                <span>CNN</span>
+                <span>Scikit-Learn</span>
+                <span>Flask</span>
+              </div>
+              <div class="project-card-footer">
+                <span class="project-link-text"><i class="fa-brands fa-github"></i>
+                  github.com/abhiram-muduli/health-ai-diagnostics</span>
+                <span class="click-hint"><i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Box 4 -->
+          <div class="project-card tilt-element" data-url="https://github.com/abhiram-muduli/nlp-sentiment-engine"
+            title="Click to open project link">
+            <div class="project-image-box">
+              <img src="images/project_ai_agent.jpg" alt="NLP Sentiment Classifier" class="project-img">
+              <div class="project-badge">NLP</div>
+              <div class="project-hover-overlay">
+                <span class="hover-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open Link</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Deep Sentiment Analyzer & Summarizer</h3>
+              <p class="project-desc">Fine-tuned Transformer model for multi-lingual text sentiment classification and
+                automated document summarization.</p>
+              <div class="project-tags">
+                <span>HuggingFace</span>
+                <span>Transformers</span>
+                <span>PyTorch</span>
+                <span>Streamlit</span>
+              </div>
+              <div class="project-card-footer">
+                <span class="project-link-text"><i class="fa-brands fa-github"></i>
+                  github.com/abhiram-muduli/nlp-sentiment-engine</span>
+                <span class="click-hint"><i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: ACHIEVEMENTS (CLICK OPENS LIGHTBOX PHOTO/VIDEO IN PERFECT RATIO) -->
+    <section id="achievements" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fa-solid fa-award"></i> Honors & Credentials</div>
+          <h2 class="section-title">Key <span class="gradient-text">Achievements & Certificates</span></h2>
+          <p class="section-subtitle">Click on any card to view the full resolution photo or video in perfect aspect
+            ratio modal viewer.</p>
+        </div>
+
+        <div class="achievements-grid">
+
+          <!-- Achievement Box 1 (Photo Lightbox) -->
+          <div class="achievement-card tilt-element" data-type="image" data-src="images/internship.jpeg"
+            data-title="AI & Machine Learning Internship"
+            data-issuer="Python • OpenCV • TensorFlow/Keras • CNN • Image Processing • ML" data-date="2025"
+            data-desc="Completed an intensive AI & Machine Learning Engineering internship focusing on Python, OpenCV, TensorFlow/Keras, CNNs, image processing algorithms, and machine learning model deployment.">
+            <div class="achievement-media">
+              <img src="images/internship.jpeg" alt="AI & ML Internship Certificate" class="achievement-img internship-img">
+              <div class="media-type-icon"><i class="fa-solid fa-file-contract"></i></div>
+              <div class="achievement-overlay">
+                <span class="view-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+              </div>
+            </div>
+            <div class="achievement-info">
+              <span class="achievement-date">2025</span>
+              <h3 class="achievement-name">AI & Machine Learning Internship</h3>
+              <p class="achievement-sub">Python + OpenCV + TensorFlow/Keras + CNN + Image Processing + Machine Learning</p>
+            </div>
+          </div>
+
+          <!-- Achievement Box 2 (Photo Lightbox) -->
+          <div class="achievement-card tilt-element" data-type="image" data-src="images/drone.jpeg"
+            data-title="Machine Intelligence in Drone and Aeromechanics"
+            data-issuer="Drone Aeromechanics & AI Real-World Applications" data-date="2025"
+            data-desc="Explored Machine Intelligence, Drone Aeromechanics, AI integration with flight control systems, real-world UAV applications, deployment challenges, and future scope.">
+            <div class="achievement-media">
+              <img src="images/drone.jpeg" alt="Drone Aeromechanics & Machine Intelligence Certification" class="achievement-img">
+              <div class="media-type-icon"><i class="fa-solid fa-certificate"></i></div>
+              <div class="achievement-overlay">
+                <span class="view-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+              </div>
+            </div>
+            <div class="achievement-info">
+              <span class="achievement-date">2025</span>
+              <h3 class="achievement-name">Machine Intelligence in Drone & Aeromechanics</h3>
+              <p class="achievement-sub">Machine Intelligence → Drone Aeromechanics → AI + Flight Control → Real-World Applications → Challenges → Future Scope</p>
+            </div>
+          </div>
+
+          <!-- Achievement Box 3 (Video Lightbox) -->
+          <div class="achievement-card tilt-element" data-type="video" data-src="videos/emotions].mp4"
+            data-title="AI Emotion Detection System Video Showcase" data-issuer="Real-Time Facial Expression & Emotion Analysis" data-date="2025"
+            data-desc="Live video recording showcasing real-time facial expression classification, computer vision feature extraction, and neural emotion detection algorithms.">
+            <div class="achievement-media">
+              <img src="images/thumbnell.png" alt="AI Emotion Detection System Video Thumbnail" class="achievement-img">
+              <div class="media-type-icon video-icon"><i class="fa-solid fa-circle-play"></i></div>
+              <div class="achievement-overlay">
+                <span class="view-btn"><i class="fa-solid fa-play"></i> Watch Video</span>
+              </div>
+            </div>
+            <div class="achievement-info">
+              <span class="achievement-date">2025</span>
+              <h3 class="achievement-name">AI Emotion Detection System Video Showcase</h3>
+              <p class="achievement-sub"><i class="fa-solid fa-video"></i> Click to play full-ratio video demo</p>
+            </div>
+          </div>
+
+          <!-- Achievement Box 4 (Photo Lightbox) -->
+          <div class="achievement-card tilt-element" data-type="image" data-src="images/conference.jpeg"
+            data-title="International Conference Paper Presentation – ICCOSET 2024"
+            data-issuer="ICCOSET-2024, GIET Bhubaneswar" data-date="2024"
+            data-desc="Presented a technical paper at the International Conference on Challenges and Opportunities in Science, Engineering and Technology (ICCOSET-2024), GIET, Bhubaneswar.">
+            <div class="achievement-media">
+              <img src="images/conference.jpeg" alt="ICCOSET-2024 Conference Presentation" class="achievement-img">
+              <div class="media-type-icon"><i class="fa-solid fa-award"></i></div>
+              <div class="achievement-overlay">
+                <span class="view-btn"><i class="fa-solid fa-expand"></i> View Showcase</span>
+              </div>
+            </div>
+            <div class="achievement-info">
+              <span class="achievement-date">2024</span>
+              <h3 class="achievement-name">International Conference Paper Presentation – ICCOSET 2024</h3>
+              <p class="achievement-sub">Presented a technical paper at the International Conference on Challenges and Opportunities in Science, Engineering and Technology (ICCOSET-2024), GIET, Bhubaneswar.</p>
+            </div>
+          </div>
+
+          <!-- Achievement Box 5 (Photo Lightbox) -->
+          <div class="achievement-card tilt-element" data-type="image" data-src="images/robotics.jpeg"
+            data-title="Robotics & Autonomous Systems"
+            data-issuer="Robotics & Embedded Systems Research Lab" data-date="2025"
+            data-desc="Advanced certification in autonomous robotics design, microcontroller integration, sensor fusion navigation algorithms, and hardware integration.">
+            <div class="achievement-media">
+              <img src="images/robotics.jpeg" alt="Robotics Systems Certificate" class="achievement-img">
+              <div class="media-type-icon"><i class="fa-solid fa-robot"></i></div>
+              <div class="achievement-overlay">
+                <span class="view-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+              </div>
+            </div>
+            <div class="achievement-info">
+              <span class="achievement-date">2025</span>
+              <h3 class="achievement-name">Robotics & Autonomous Systems</h3>
+              <p class="achievement-sub">Hardware & Sensor Fusion Integration</p>
+            </div>
+          </div>
+
+          <!-- Achievement Box 6 (Photo Lightbox) -->
+          <div class="achievement-card tilt-element" data-type="image" data-src="images/3D printing.jpeg"
+            data-title="3D Printing & Rapid Prototyping" data-issuer="Advanced Fabrication & CAD Workshop"
+            data-date="2024"
+            data-desc="Recognized for rapid prototyping, additive manufacturing techniques, and precision CAD design for custom AI sensor mounts and robot structural chassis.">
+            <div class="achievement-media">
+              <img src="images/3D printing.jpeg" alt="3D Printing Prototyping Certificate" class="achievement-img">
+              <div class="media-type-icon"><i class="fa-solid fa-cube"></i></div>
+              <div class="achievement-overlay">
+                <span class="view-btn"><i class="fa-solid fa-expand"></i> View Showcase</span>
+              </div>
+            </div>
+            <div class="achievement-info">
+              <span class="achievement-date">2024</span>
+              <h3 class="achievement-name">3D Printing & Rapid Prototyping</h3>
+              <p class="achievement-sub">Additive Manufacturing & CAD Design</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT SECTION & SOCIAL PROFILE LINKS -->
+    <section id="contact" class="section-padding bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-badge"><i class="fa-solid fa-comments"></i> Get In Touch</div>
+          <h2 class="section-title">Contact <span class="gradient-text">Abhiram Muduli</span></h2>
+          <p class="section-subtitle">Feel free to reach out for AI project collaborations, internships, or technical
+            discussions!</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Left Column: Personal Contact Cards & Social Links -->
+          <div class="contact-info-col">
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="info-details">
+                <h4>Email Address</h4>
+                <a href="mailto:abhirammdl@gmail.com" class="info-link">abhirammdl@gmail.com</a>
+                <span class="info-note">(Click to send email directly)</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-building-columns"></i></div>
+              <div class="info-details">
+                <h4>College & Branch</h4>
+                <p>Gandhi Institute of Excellent Technocrats</p>
+                <span class="info-sub">B-Tech in Computer Science & Engg (AI)</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-details">
+                <h4>Location</h4>
+                <p>Bhubaneswar / Odisha, India</p>
+              </div>
+            </div>
+
+            <!-- Profile & Social Links -->
+            <div class="social-links-box">
+              <h4>Connect Across Platforms</h4>
+              <div class="social-grid">
+                <a href="https://github.com/abhiram07656"
+                  data-android-intent="intent://github.com/abhiram07656#Intent;scheme=https;package=com.github.android;S.browser_fallback_url=https%3A%2F%2Fgithub.com%2Fabhiram07656;end;"
+                  target="_blank" rel="noopener noreferrer" class="social-btn github" title="GitHub Profile">
+                  <i class="fa-brands fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/abhirammuduli/"
+                  data-android-intent="intent://www.linkedin.com/in/abhirammuduli/#Intent;scheme=https;package=com.linkedin.android;S.browser_fallback_url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fabhirammuduli%2F;end;"
+                  target="_blank" rel="noopener noreferrer" class="social-btn linkedin" title="LinkedIn Profile">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://www.kaggle.com/abhirammuduli"
+                  data-android-intent="https://www.kaggle.com/abhirammuduli" target="_blank" rel="noopener noreferrer"
+                  class="social-btn kaggle" title="Kaggle Profile">
+                  <i class="fa-brands fa-kaggle"></i>
+                  <span>Kaggle</span>
+                </a>
+                <a href="https://leetcode.com/u/abhirammdl07/"
+                  data-android-intent="https://leetcode.com/u/abhirammdl07/" target="_blank" rel="noopener noreferrer"
+                  class="social-btn leetcode" title="LeetCode Profile">
+                  <i class="fa-solid fa-code"></i>
+                  <span>LeetCode</span>
+                </a>
+                <a href="https://x.com/MuduliAbhi17732"
+                  data-android-intent="intent://x.com/MuduliAbhi17732#Intent;scheme=https;package=com.twitter.android;S.browser_fallback_url=https%3A%2F%2Fx.com%2FMuduliAbhi17732;end;"
+                  target="_blank" rel="noopener noreferrer" class="social-btn twitter" title="Twitter/X Profile">
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <span>Twitter / X</span>
+                </a>
+                <a href="https://www.instagram.com/abhirammdl_official/"
+                  data-android-intent="intent://www.instagram.com/abhirammdl_official/#Intent;scheme=https;package=com.instagram.android;S.browser_fallback_url=https%3A%2F%2Fwww.instagram.com%2Fabhirammdl_official%2F;end;"
+                  target="_blank" rel="noopener noreferrer" class="social-btn instagram" title="Instagram Profile">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-col">
+            <form id="contact-form" class="contact-form" action="https://formsubmit.co/4a9df7efa152ed16d0e1e09e502e0785"
+              method="POST">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <h3 class="form-title"><i class="fa-solid fa-paper-plane"></i> Send Me a Message</h3>
+
+              <div class="form-group">
+                <label for="user-name">Your Full Name</label>
+                <div class="input-icon-wrapper">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="user-name" name="name" placeholder="e.g. Rahul Sharma" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="user-email">Your Email Address</label>
+                <div class="input-icon-wrapper">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" id="user-email" name="email" placeholder="e.g. rahul@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="user-subject">Subject</label>
+                <div class="input-icon-wrapper">
+                  <i class="fa-solid fa-pen-nib"></i>
+                  <input type="text" id="user-subject" name="subject" placeholder="Project Inquiry / AI Collaboration"
+                    required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="user-message">Message</label>
+                <textarea id="user-message" name="message" rows="5" placeholder="Write your message here..."
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full btn-ripple" id="form-submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+
+              <div id="form-status" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="logo">
+          <span class="logo-text">Abhiram<span class="highlight">.AI</span></span>
+        </a>
+        <p>B.Tech CSE (AI) | Gandhi Institute of Excellent Technocrats</p>
+      </div>
+
+      <div class="footer-center">
+        <p>&copy; <span id="year">2026</span> Abhiram Muduli. All rights reserved.</p>
+      </div>
+
+      <div class="footer-right">
+        <a href="#home" class="back-to-top" id="back-to-top" title="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL FOR ACHIEVEMENTS (PERFECT ASPECT RATIO PHOTO / VIDEO VIEWER) -->
+  <dialog id="lightbox-dialog" class="lightbox-modal">
+    <div class="lightbox-content">
+      <button id="lightbox-close" class="lightbox-close-btn" aria-label="Close Lightbox Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="lightbox-media-container" id="lightbox-media-container">
+        <!-- Media (Image or Video) dynamically inserted here -->
+      </div>
+
+      <div class="lightbox-meta">
+        <h3 id="lightbox-title" class="lightbox-title"></h3>
+        <div class="lightbox-tags">
+          <span id="lightbox-issuer" class="tag-chip"></span>
+          <span id="lightbox-date" class="tag-chip tag-accent"></span>
+        </div>
+        <p id="lightbox-desc" class="lightbox-description"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Custom JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
