@@ -341,6 +341,10 @@ document.addEventListener('DOMContentLoaded', () => {
         video.controls = true;
         video.autoplay = true;
         video.playsInline = true;
+        video.setAttribute('playsinline', 'playsinline');
+        video.setAttribute('webkit-playsinline', 'webkit-playsinline');
+        video.setAttribute('controlsList', 'nodownload');
+        video.preload = 'metadata';
         lightboxMediaContainer.appendChild(video);
       }
 
